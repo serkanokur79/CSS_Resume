@@ -1,0 +1,297 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE- light blue
+#EDF2F4 - blue/white
+#EF233C - red
+--------------*/
+
+
+
+/* Global styles
+----------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin:0;
+}
+.about_title{
+  font-family: 'Bad Script', cursive;
+  color: #EDF2F4;
+  font-weight: 200;
+  margin: 0;
+}
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 30px;
+  margin-top: 0;
+}
+h2.about_title{
+font-size: 20px;
+}
+
+h3{
+  margin: 0;
+}
+
+a {
+  color: #EF233C;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;;
+  overflow: auto;
+}
+
+.uppercase{
+text-transform: uppercase;
+text-size: 15px;
+}
+.btn{
+  text-decoration: none;
+  background: #EF233C;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Navigation
+--------------*/
+nav{
+  text-align:center;
+  background: white;
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index:999;
+}
+
+nav a{
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/*Header and Footer
+--------------------------*/
+header, footer{
+  background: #2B2D42;
+  color: #8D99AE;
+}
+/* header*/
+header{
+  padding-top: 50px;
+  position: relative;
+}
+
+.profile-img{
+  /* width:250px; */
+  border-radius: 50%;
+  /* float:left;
+  margin-right: 30px; */
+}
+.download{
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+}
+
+/*footer*/
+footer{
+  text-align: center;
+
+}
+
+footer h1,h2{
+  font-family: 'Bad Script', cursive;
+}
+
+.content-info a{
+  padding: 10px;
+  display: inline-block;
+}
+
+/*Work Experience
+----------------------*/
+.work{
+  background: #EDF2F4;
+}
+h3~p{
+  margin:0;
+}
+.job-description{
+  margin-bottom: 25px;
+}
+
+.job-description p:first-of-type{
+  margin-top: 0;
+}
+
+/* Education
+---------------------------*/
+.education{
+  /* background: #8D99AE; */
+  background: linear-gradient(rgba(141, 153, 174, 0.9),
+                 rgba(141, 153, 174, 0.8)),
+                 url(../images/educa.jpg) no-repeat fixed;
+  background-size: cover;
+
+}
+p + h3{
+  margin-top: 30px;
+}
+
+/*Certificates
+----------------------*/
+.certificate{
+  background: #EDF2F4;
+}
+
+.cert_h4{
+  margin:0;
+  padding-top: 5px;
+}
+
+.logo-img{
+  width:15px;
+  /* padding-left: 0; */
+}
+
+
+/* Media Queries
+---------------------------*/
+
+@media (min-width: 768px){
+
+  .col-narrow{
+    width:40%;
+    float:left;
+    /* border: 1px dotted #2B2D42; */
+    /* min-height: 175px; */
+  }
+  .col-wide{
+    width:60%;
+    float:left;
+    /* border: 1px dotted #2B2D42; */
+    padding-left: 5%;
+  }
+  .col-leftC{
+    width:55%;
+    float:left;
+    /* border: 1px dotted #2B2D42; */
+    /* min-height: 175px; */
+  }
+  .col-midC{
+    width:35%;
+    float:left;
+    /* border: 1px dotted #2B2D42; */
+    padding-left: 1%;
+  }
+  .col-rightC{
+    width:10%;
+    float:left;
+    /* border: 1px dotted #2B2D42; */
+  }
+}
+
+@media (max-width:767px) {
+  header{
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+  }
+  body{
+    font-size: 0.9em;
+  }
+  nav a{
+      display: inline-block;
+      padding: 5px 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      /* font-size: 0.9em; */
+    }
+  .profile-img{
+    width: 100px;
+  }
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 30px;
+    margin-top: 0;
+  }
+  h2.about_title{
+  font-size: 15px;
+  }
+  p{
+    text-align: left;
+
+  }
+  .download{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (max-width:321px) {
+  header{
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+  }
+  body{
+    font-size: 0.7em;
+  }
+  .profile-img{
+    width: 70px;
+  }
+  nav a{
+      display: inline-block;
+      padding: 5px 3px;
+      text-decoration: none;
+      text-transform: lowercase;
+      font-size: 0.6rem;
+    }
+  p{
+    text-align: left;
+  }
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 20px;
+    margin-top: 0;
+  }
+  h2.about_title{
+  font-size: 11px;
+  }
+  .download{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 25px 50px;;
+    overflow: auto;
+  }
+}
