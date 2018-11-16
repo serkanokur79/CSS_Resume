@@ -104,6 +104,8 @@ header{
 .profile-img{
   /* width:250px; */
   border-radius: 50%;
+  /* shape-outside: circle(); */
+  /* clip-path:circle(); */
   /* float:left;
   margin-right: 30px; */
 }
